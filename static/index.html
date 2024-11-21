@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest X-Ray Classifier</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chest X-Ray Classification</h1>
+        <p>Upload a Chest X-ray image to classify it as COVID-19, Pneumonia, or Normal.</p>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*" required>
+            <button type="submit">Predict Now</button>
+        </form>
+        <div id="result"></div>
+        <div id="image"></div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
